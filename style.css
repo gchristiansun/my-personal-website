@@ -9,6 +9,7 @@ nav {
     position: sticky;
     top: 0px;
     background-color: white;
+    z-index: 2;
 }
 
 head {
@@ -218,6 +219,7 @@ body {
     display: flex;
     justify-content: center;
     width: 100%;
+    flex-wrap: wrap;
 }
 
 .icon-contact .box-icon-custom {
@@ -231,14 +233,14 @@ body {
 @media (max-width: 600px) {
     .box-icon-custom {
         background-color: #696969;
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
         display: flex;
         justify-content: center;
         align-items: center;
         border-radius: 10px;
         transition: 0.5s ease;
-        flex-wrap: wrap;
+        margin-left: 10px
     }
 
     .icon-custom {
@@ -248,7 +250,7 @@ body {
     }
 
     .image-profile img {
-        width: 250px;
+        width: 240px;
         border-top-right-radius: 90px;
         border-top-left-radius: 60px;
         border-bottom-right-radius: 60px;
@@ -263,12 +265,12 @@ body {
 
     .text-profile h1 {
         font-weight: bold;
-        font-size: 45px;
+        font-size: 40px;
     }
 
     .text-profile h2 {
         font-weight:normal;
-        font-size: 25px;
+        font-size: 20px;
     }
 
     .box-icon-custom:hover {
@@ -299,13 +301,14 @@ body {
         position: sticky;
         top: 0px;
         background-color: white;
+        z-index: 2;
     }
 
     .image-profile {
         width: 100%;
         display: flex;
         justify-content: center;
-        padding-top: 35%;
+        padding-top: 25%;
         padding-bottom: 5%
     }
 
@@ -317,10 +320,10 @@ body {
 
 
 main {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     overflow: hidden;
-    z-index: -1
+    position: relative;
 }
   
 .particle {
@@ -332,6 +335,7 @@ main {
     opacity: 0.7;
     animation: float 100s infinite ease-in-out;
     z-index: -100;
+
 }
   
 @keyframes float {
