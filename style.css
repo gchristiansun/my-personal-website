@@ -250,11 +250,11 @@ body {
     }
 
     .image-profile img {
-        width: 240px;
-        border-top-right-radius: 90px;
-        border-top-left-radius: 60px;
-        border-bottom-right-radius: 60px;
-        border-bottom-left-radius: 90px;
+        width: 200px;
+        border-top-right-radius: 80px;
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        border-bottom-left-radius: 80px;
         box-shadow: 1px 4px 8px #696969;
     }
 
@@ -265,7 +265,7 @@ body {
 
     .text-profile h1 {
         font-weight: bold;
-        font-size: 40px;
+        font-size: 35px;
     }
 
     .text-profile h2 {
@@ -308,13 +308,25 @@ body {
         width: 100%;
         display: flex;
         justify-content: center;
-        padding-top: 25%;
+        padding-top: 20%;
         padding-bottom: 5%
     }
 
     .icon-nav {
         font-size: 35px;
         margin-right: 8%
+    }
+
+    .particle {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        background-color: black;
+        border-radius: 50%;
+        opacity: 0.7;
+        animation: float 100s infinite ease-in-out;
+        z-index: -100;
+    
     }
 }
 
