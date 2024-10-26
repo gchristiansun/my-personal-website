@@ -31,10 +31,14 @@ const buttonmenu = document.querySelector('.icon-nav');
 const menu = document.querySelector('nav ul');
 const closemenu = document.querySelector('.icon-close')
 buttonmenu.addEventListener('click', () => {
-  menu.style.right = '0px';
-  closemenu.style.right = '5%';
+  menu.style.display = 'block'
+  setTimeout(() => {
+    menu.classList.add('show')
+  }, 10)
 });
 closemenu.addEventListener('click', () => {
-  menu.style.right = '-500px';
-  closemenu.style.right = '-10%';
+  menu.classList.remove('show')
+  setTimeout(() => {
+    menu.style.display = 'none'
+  }, 300)
 })

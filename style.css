@@ -29,23 +29,35 @@ body {
         justify-content: end;
         font-weight:bold;
         position: absolute;
-        right: -500px;
         top: 60px;
+        right: 0px;
+        display: none;
+        opacity: 0;
         background-color: white;
         width: 50vw;
         height: 100vh;
         margin: 0px;
         z-index: -10000;
         margin-right: 0px;
-        transition: 1s;
+        transition: opacity 1s ease;
+    }
+
+    nav ul.show {
+        display: block;
+        opacity: 1;
     }
 
     nav ul li {
-        margin: 50px 20%;
+        margin: 14% 20%;
         font-size: 18px;
         color: #696969;
         z-index: -100000;
+        transition: 1
+    }
 
+    li h2 {
+        margin-top: 50px
+        
     }
 
     .menu {
@@ -183,8 +195,8 @@ body {
 .icon-close {
     font-size: 35px;
     position: absolute;
-    top: 90px;
-    right: -10%;
+    top: 20px;
+    right: 5%;
     transition: 0.5s;
 }
 
