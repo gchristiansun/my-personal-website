@@ -29,16 +29,19 @@ for (let i = 0; i < numParticles; i++) {
 
 const buttonmenu = document.querySelector('.icon-nav');
 const menu = document.querySelector('nav ul');
-const closemenu = document.querySelector('.icon-close')
+const closemenu = document.querySelector('.icon-close');
+const overlayBackground = document.querySelector('.overlay')
 buttonmenu.addEventListener('click', () => {
   menu.style.display = 'block'
+  overlayBackground.style.display = 'block'
   setTimeout(() => {
     menu.classList.add('show')
   }, 10)
 });
 closemenu.addEventListener('click', () => {
   menu.classList.remove('show')
+  overlayBackground.style.display = 'none'
   setTimeout(() => {
     menu.style.display = 'none'
-  }, 300)
+  }, 800)
 })
