@@ -4,7 +4,7 @@ const container = document.querySelector('main');
 
 
 // Tentukan jumlah partikel yang ingin dibuat
-let numParticles = 100;
+const numParticles = 200;
 
 // Fungsi untuk menghasilkan partikel
 for (let i = 0; i < numParticles; i++) {
