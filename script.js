@@ -26,13 +26,3 @@ for (let i = 0; i < numParticles; i++) {
   // Tambahkan partikel ke dalam container
   container.appendChild(particle);
 }
-
-window.addEventListener('resize', () => {
-  const width = window.innerWidth;
-  
-  if (width < 600) {
-    document.body.style.backgroundColor = 'lightblue'; // contoh perubahan
-  } else {
-    document.body.style.backgroundColor = 'white';
-  }
-});

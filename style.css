@@ -57,7 +57,7 @@ body {
     }
 
     .judul-nav h1 {
-        display: none;
+        font-size:8px;
     }
     
 }
@@ -111,13 +111,13 @@ body {
 
 @media (max-width: 768px) {
     .logo-nav {
-        margin-left: 50px;
+        margin-left: 40px;
     }
 }
 
 @media (max-width: 480px) {
     .logo-nav {
-        margin-left: 35px;
+        margin-left: 25px;
         width: 75px
     }
 }
