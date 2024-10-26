@@ -1,8 +1,10 @@
 // Pilih container untuk partikel
 const container = document.querySelector('main');
 
+
+
 // Tentukan jumlah partikel yang ingin dibuat
-const numParticles = 1000; // Misalnya 200 partikel
+let numParticles = 100;
 
 // Fungsi untuk menghasilkan partikel
 for (let i = 0; i < numParticles; i++) {
@@ -24,3 +26,13 @@ for (let i = 0; i < numParticles; i++) {
   // Tambahkan partikel ke dalam container
   container.appendChild(particle);
 }
+
+window.addEventListener('resize', () => {
+  const width = window.innerWidth;
+  
+  if (width < 600) {
+    document.body.style.backgroundColor = 'lightblue'; // contoh perubahan
+  } else {
+    document.body.style.backgroundColor = 'white';
+  }
+});
