@@ -1,12 +1,12 @@
 // Pilih container untuk partikel
 const container = document.querySelector('main');
-
+const container2 = document.querySelector('section');
 
 
 // Tentukan jumlah partikel yang ingin dibuat
 const numParticles = 300;
 
-// Fungsi untuk menghasilkan partikel
+// Fungsi untuk menghasilkan partikels
 for (let i = 0; i < numParticles; i++) {
   const particle = document.createElement('div');
   particle.classList.add('particle');
@@ -25,6 +25,7 @@ for (let i = 0; i < numParticles; i++) {
 
   // Tambahkan partikel ke dalam container
   container.appendChild(particle);
+  container2.appendChild(particle)
 }
 
 const buttonmenu = document.querySelector('.icon-nav');
