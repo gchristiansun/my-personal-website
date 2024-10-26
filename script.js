@@ -26,3 +26,15 @@ for (let i = 0; i < numParticles; i++) {
   // Tambahkan partikel ke dalam container
   container.appendChild(particle);
 }
+
+const buttonmenu = document.querySelector('.icon-nav');
+const menu = document.querySelector('nav ul');
+const closemenu = document.querySelector('.icon-close')
+buttonmenu.addEventListener('click', () => {
+  menu.style.display = 'block';
+  closemenu.style.display = 'block';
+});
+closemenu.addEventListener('click', () => {
+  menu.style.display = 'none';
+  closemenu.style.display = 'none';
+})
