@@ -29,15 +29,15 @@ body {
         justify-content: end;
         font-weight:bold;
         position: absolute;
-        right: 0px;
-        top: 80px;
+        right: -500px;
+        top: 60px;
         background-color: white;
         width: 50vw;
         height: 100vh;
         margin: 0px;
         z-index: -10000;
         margin-right: 0px;
-        display: none;
+        transition: 1s;
     }
 
     nav ul li {
@@ -184,8 +184,8 @@ body {
     font-size: 35px;
     position: absolute;
     top: 90px;
-    right: 5%;
-    display: none
+    right: -10%;
+    transition: 0.5s;
 }
 
 .box-icon-custom {
@@ -290,7 +290,7 @@ body {
         width: 100%;
         height: 60px;
         margin: 0px;
-        box-shadow: 1px 2px 5px #696969;
+        box-shadow: 1px 2px 4px #696969;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -393,4 +393,6 @@ main {
         opacity: 0.7;
     }
 }
+
+
   
