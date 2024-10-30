@@ -1,11 +1,8 @@
-// Pilih container untuk partikel
+
 const container = document.querySelector('main');
 
-
-// Tentukan jumlah partikel yang ingin dibuat
 const numParticles = 300;
 
-// Fungsi untuk menghasilkan partikels
 for (let i = 0; i < numParticles; i++) {
   const particle = document.createElement('div');
   particle.classList.add('particle');
