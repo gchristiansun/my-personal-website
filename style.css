@@ -357,7 +357,7 @@ body {
         text-align: justify;
         color: black;
         margin: 0px 10px;
-        line-height: 40px;
+        line-height: 30px!important;
         letter-spacing: 2px;
         font-weight: 540;
     }
