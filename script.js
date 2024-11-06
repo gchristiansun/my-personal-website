@@ -1,6 +1,6 @@
 
 const container = document.querySelector('main');
-const section = document.querySelector('.about-section')
+const section = document.querySelector('.about-section h2')
 
 const numParticles = 300;
 
@@ -22,7 +22,7 @@ for (let i = 0; i < numParticles; i++) {
 
   // Tambahkan partikel ke dalam container
   container.appendChild(particle);
-  section.appendChild(particle)
+  // section.appendChild(particle)
 }
 
 const buttonmenu = document.querySelector('.icon-nav');
