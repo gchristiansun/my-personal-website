@@ -461,7 +461,6 @@ main {
     line-height: 1.8;
     color: #333;
     padding: 20px;
-    background-color: #f9f9f9;
     max-width: 800px;
     margin: 40px auto;
     border-radius: 8px;
@@ -485,7 +484,7 @@ main {
     color: #131349ff;
   }
 
-  .about-section p::first-letter {
+  .about-section p:first-of-type::first-letter {
     font-size: 4rem;
     font-weight: bold;
     color: #131349ff;
