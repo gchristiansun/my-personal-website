@@ -1,79 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Section</title>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    /* CSS Styles */
+    .about-section {
+      font-family: 'Merriweather', serif;
+      line-height: 1.8;
+      color: #333;
+      padding: 20px;
+      background-color: #f9f9f9;
+      max-width: 800px;
+      margin: 40px auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .about-section h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #ff6347;
+      display: inline-block;
+    }
+
+    .about-section p {
+      margin-bottom: 15px;
+      text-align: justify;
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    .about-section p:hover {
+      transform: translateX(10px);
+      color: #ff6347;
+    }
+
+    .about-section p::first-letter {
+      font-size: 3rem;
+      font-weight: bold;
+      color: #ff4500;
+      float: left;
+      margin: 0 10px 0 0;
+    }
+
+    @media (max-width: 768px) {
+      .about-section {
+        padding: 15px;
+        font-size: 0.9rem;
+      }
+    }
+  </style>
 </head>
 <body>
-    <h2>CSS3 Timeline</h2>
-<p>Please set the $vertical variable to false to see the horizontal version.</p>
-<ul id='timeline'>
-  <li class='work'>
-    <input class='radio' id='work5' name='works' type='radio' checked>
-    <div class="relative">
-      <label for='work5'>Lorem ipsum dolor sit amet</label>
-      <span class='date'>12 May 2013</span>
-      <span class='circle'></span>
-    </div>
-    <div class='content'>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio ea necessitatibus quo velit natus cupiditate qui alias possimus ab praesentium nostrum quidem obcaecati nesciunt! Molestiae officiis voluptate excepturi rem veritatis eum aliquam qui laborum non ipsam ullam tempore reprehenderit illum eligendi cumque mollitia temporibus! Natus dicta qui est optio rerum.
-      </p>
-    </div>
-  </li>
-  <li class='work'>
-    <input class='radio' id='work4' name='works' type='radio'>
-    <div class="relative">
-      <label for='work4'>Lorem ipsum dolor sit amet</label>
-      <span class='date'>11 May 2013</span>
-      <span class='circle'></span>
-    </div>
-    <div class='content'>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio ea necessitatibus quo velit natus cupiditate qui alias possimus ab praesentium nostrum quidem obcaecati nesciunt! Molestiae officiis voluptate excepturi rem veritatis eum aliquam qui laborum non ipsam ullam tempore reprehenderit illum eligendi cumque mollitia temporibus! Natus dicta qui est optio rerum.
-      </p>
-    </div>
-  </li>
-  <li class='work'>
-    <input class='radio' id='work3' name='works' type='radio'>
-    <div class="relative">
-      <label for='work3'>Lorem ipsum dolor sit amet</label>
-      <span class='date'>10 May 2013</span>
-      <span class='circle'></span>
-    </div>
-    <div class='content'>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio ea necessitatibus quo velit natus cupiditate qui alias possimus ab praesentium nostrum quidem obcaecati nesciunt! Molestiae officiis voluptate excepturi rem veritatis eum aliquam qui laborum non ipsam ullam tempore reprehenderit illum eligendi cumque mollitia temporibus! Natus dicta qui est optio rerum.
-      </p>
-    </div>
-  </li>
-  <li class='work'>
-    <input class='radio' id='work2' name='works' type='radio'>
-    <div class="relative">
-      <label for='work2'>Lorem ipsum dolor sit amet</label>
-      <span class='date'>09 May 2013</span>
-      <span class='circle'></span>
-    </div>
-    <div class='content'>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio ea necessitatibus quo velit natus cupiditate qui alias possimus ab praesentium nostrum quidem obcaecati nesciunt! Molestiae officiis voluptate excepturi rem veritatis eum aliquam qui laborum non ipsam ullam tempore reprehenderit illum eligendi cumque mollitia temporibus! Natus dicta qui est optio rerum.
-      </p>
-    </div>
-  </li>
-  <li class='work'>
-    <input class='radio' id='work1' name='works' type='radio'>
-    <div class="relative">
-      <label for='work1'>Lorem ipsum dolor sit amet</label>
-      <span class='date'>08 May 2013</span>
-      <span class='circle'></span>
-    </div>
-    <div class='content'>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio ea necessitatibus quo velit natus cupiditate qui alias possimus ab praesentium nostrum quidem obcaecati nesciunt! Molestiae officiis voluptate excepturi rem veritatis eum aliquam qui laborum non ipsam ullam tempore reprehenderit illum eligendi cumque mollitia temporibus! Natus dicta qui est optio rerum.
-      </p>
-    </div>
-  </li>
-</ul>
+  <section class="about-section">
+    <h2>About Me</h2>
+    <p>
+      I am Gregorius Christian Sunaryo, a recent graduate from Universitas Pendidikan Indonesia, majoring in Software Engineering. My passion lies in front-end web development and artificial intelligence research. With a strong foundation in HTML, CSS, JavaScript, and Python, I am motivated to bring my ideas to life and contribute to innovative projects. Hailing from Rangkabitung, Lebak, Banten, I aim to create meaningful impact through technology and open opportunities for collaboration.
+    </p>
+    <p>
+      I have experience in data entry and a deep interest in developing personal dummy projects that highlight my growing expertise in web development. Always eager to learn and improve, I strive to build engaging and functional web interfaces. I also value teamwork and am currently interested in joining student organizations and committees related to technology and leadership.
+    </p>
+  </section>
 </body>
 </html>
