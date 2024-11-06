@@ -507,6 +507,10 @@ main {
       padding: 40px;
       font-size: 0.9rem;
     }
+
+    .about-section p{
+        font-size: 0.9rem;
+      }
   }
 
   .event-section {
