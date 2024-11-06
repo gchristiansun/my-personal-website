@@ -472,37 +472,37 @@ main {
     max-width: 800px;
     margin: 40px auto;
     border-radius: 8px;
-  }
+}
 
-  .about-section h2 {
+.about-section h2 {
     font-size: 2rem;
     margin-bottom: 10px;
     border-bottom: 2px solid #131349ff;
     display: inline-block;
     background-color: transparent ;
-  }
+}
 
-  .about-section p {
+.about-section p {
     margin-bottom: 15px;
     text-align: justify;
     transition: transform 1s ease, color 1s ease;
     font-size: 1.15rem;
-  }
+}
 
-  .about-section p:hover {
+.about-section p:hover {
     transform: translateX(10px);
     color: #131349ff;
-  }
+}
 
-  .about-section p:first-of-type::first-letter {
+.about-section p:first-of-type::first-letter {
     font-size: 4rem;
     font-weight: bold;
     color: #131349ff;
     float: left;
     margin: 0 10px 0 0;
-  }
+}
 
-  .event-section {
+.event-section {
     font-family: 'Merriweather', serif;
     line-height: 1.8;
     color: #333;
@@ -510,85 +510,98 @@ main {
     max-width: 800px;
     margin: 40px auto;
     border-radius: 8px;
-  }
+}
 
-  .event-section h2 {
+.event-section h2 {
     font-size: 2rem;
     margin-bottom: 10px;
     border-bottom: 2px solid #131349ff;
     display: inline-block;
-    background-color: transparent ;
-  }
+    background-color: transparent;
+}
 
-  .event-section p {
+.event-section p {
     margin-bottom: 0px;
-    text-align: justify;
     transition: transform 1s ease, color 1s ease;
     font-size: 1.15rem;
-  }
+}
 
-  .event-box {
+.event-box {
     box-shadow: 2px 4px 8px#696969;
     position: relative;
     width: 400px;
     height: 250px;
-    justify-content: center;
     overflow: hidden;
-  }
+}
 
-  .event-box img {
+.event-box img {
     margin: 0px;
     width: 400px;
     height:250px;
     object-fit: cover;
-    filter: brightness(60%);
+    filter: brightness(50%);
     transition: filter 0.5s ease;
-  }
+}
 
-  .event-box img:hover {
+.event-box img:hover {
     filter: brightness(100%);
-  }
+}
 
-  .event-box h3 {
+.event-box h3 {
     position: absolute;
-    left: 20px
+    left: 6.5%;
+    bottom: 90px;
+    color: white;
+    z-index: 1;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
-  }
-
-  .event-box p {
+.event-box p {
     position: absolute;
-    text-align: center;
+    text-align: left;
     bottom: 0px
-  }
+}
 
-  .description {
-    opacity: 0;
+.description {
+    opacity: 1;
     color: white;
     font-size: 0.9rem !important;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: transparent;
     transition: opacity 1s ease-in, background-color 10s ease;
-    padding-bottom: 100px;
-    padding-top: 15px;
-    transform: translateY(10px);
-  }
+    padding: 0px 25px 60px 25px
+}
 
-  .event-box img:hover  ~ .description {
-   
-   }
+.button-box {
+    background-color: white;
+    color: #333;
+    position: absolute;
+    bottom: 15px;
+    left: 5%;
+    text-align: center;
+    width: 90%;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 8px 0;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    outline: 2px solid #696969;
+    outline-offset: -5px
+}
 
-  .container-event-box {
+.container-event-box {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     justify-content: center;
     position: relative;
-  }
+}
 
-  .acara {
+.acara {
     position: absolute;
     top: 5px;
-    left: 15px;
+    left: 5%;
     z-index: 1;
     color: white;
     background-color:#333333c7;
@@ -597,12 +610,12 @@ main {
     height: 18px;
     padding: 5px 7px 7px 7px;
     border-radius: 10px;
-  }
+}
 
-  @media (max-width: 700px) {
+@media (max-width: 700px) {
     .about-section {
-      padding: 40px;
-      font-size: 0.9rem;
+        padding: 40px;
+        font-size: 0.9rem;
     }
 
     .event-section {
@@ -612,23 +625,23 @@ main {
 
     .about-section p{
         font-size: 0.9rem;
-      }
+    }
 
-      .event-box {
+    .event-box {
         box-shadow: 2px 4px 8px#696969;
         position: relative;
         width: 350px;
         height: 200px;
         justify-content: center;
-      }
+    }
     
-      .event-box img {
+    .event-box img {
         margin: 0px;
         width: 350px;
         height:200px;
         object-fit: cover;
         filter: brightness(70%);
         transition: filter 0.5s ease;
-      }
+    }
   }
 
