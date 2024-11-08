@@ -683,6 +683,7 @@ section {
     object-fit: contain;
     aspect-ratio: 4/3;
     mix-blend-mode: multiply;
+    -webkit-mix-blend-mode: multiply;
 }
 
 .box-skill {
