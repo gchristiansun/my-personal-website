@@ -556,6 +556,8 @@ section {
     overflow: hidden;
     margin: 5px;
     border-radius: 5px;
+    display: flex;
+    justify-content: center;
 }
 
 .event-box img {
@@ -682,8 +684,8 @@ section {
     min-width: 100px;
     object-fit: contain;
     aspect-ratio: 4/3;
-    mix-blend-mode: multiply;
-    -webkit-mix-blend-mode: multiply;
+    /* mix-blend-mode: multiply;
+    -webkit-mix-blend-mode: multiply; */
 }
 
 .box-skill {
