@@ -2,7 +2,7 @@
 const container = document.querySelector('main');
 const section = document.querySelector('.container-particle-section')
 
-const numParticles = 300;
+const numParticles = 250;
 const numParticles2 = 600;
 
 for (let i = 0; i < numParticles; i++) {

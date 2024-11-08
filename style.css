@@ -21,6 +21,11 @@ body {
     margin: 0;
 }
 
+ul li a {
+    text-decoration: none;
+    color: #696969
+}
+
 @media (max-width: 1210px) {
     nav ul {
         list-style: none;
@@ -63,10 +68,15 @@ body {
     .menu {
         text-align: center;
         background-color: #696969;
-        color: white;
+        color: white !important;
         padding: 5px;
         border-radius: 5px;
         margin-left: 5%
+    }
+
+    ul li a {
+        text-decoration: none;
+        color: white
     }
 
     .judul-nav h1 {
@@ -656,3 +666,4 @@ section {
     }
   }
 
+/* Styling skill section */
