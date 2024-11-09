@@ -67,6 +67,19 @@ closemenu.addEventListener('click', () => {
   }, 800)
 })
 
+const formalForm = document.querySelector('.form-formal');
+const anonimForm = document.querySelector('.form-anonim');
+const buttonSwitch = document.querySelector('.button-next-form');
+buttonSwitch.addEventListener('click', () => {
+  if (formalForm.style.display !== 'none') {
+    formalForm.style.display = 'none';
+    anonimForm.style.display = 'block';
+  } else {
+    formalForm.style.display = 'block';
+    anonimForm.style.display = 'none';
+  }
+})
+
 // const navLinks = document.querySelectorAll('nav ul li a')
 // function setActiveLink() {
 //   const activePage = window.location.hash;

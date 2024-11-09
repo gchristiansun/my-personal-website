@@ -207,11 +207,11 @@
                 <img src="image/web_cv.png" alt="Image">
             </div>
         </section>
-        <section class="about-section" id="message">
+        <section class="message-section" id="message">
             <h2>Message</h2>
             <div class="message-box">
-                <form action="https://formspree.io/f/mvgpglda" method="post">
-                    <fieldset>
+                <form action="https://formspree.io/f/mvgpglda" method="post" class="form-formal">
+                    <fieldset >
                         <label for="name">Full Name:</label>
                         <input class="css-format-local" type="text" id="name" name="name" required>
 
@@ -223,6 +223,17 @@
                     </fieldset>
                     <button class="css-button-local" id="submit">Send <i class="ph ph-paper-plane-tilt" name="send"></i></button>
                 </form>
+                <form action="https://formspree.io/f/mvgpglda" method="post" class="form-anonim">
+                    <fieldset >
+                        <label for="anonimName">Anonim Name:</label>
+                        <input class="css-format-local" type="text" id="name" name="name" required>
+
+                        <label for="message">Message:</label>
+                        <textarea id="message2" name="message" required placeholder="Your message"></textarea>
+                    </fieldset>
+                    <button class="css-button-local" id="submit">Send <i class="ph ph-paper-plane-tilt" name="send"></i></button>
+                </form>
+                <button class="button-next-form" id="next" name="switch">Switch</button>
             </div>
         </section>
     </div>
