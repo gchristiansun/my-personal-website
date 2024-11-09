@@ -66,3 +66,18 @@ closemenu.addEventListener('click', () => {
     menu.style.display = 'none'
   }, 800)
 })
+
+// const navLinks = document.querySelectorAll('nav ul li a')
+// function setActiveLink() {
+//   const activePage = window.location.hash;
+//   navLinks.forEach(link => {
+//     if (link.hash === activePage) {
+//       link.classList.add('active');
+//     } else {
+//       link.classList.remove('active');
+//     }
+//   });
+// }
+
+// window.addEventListener('hashchange', setActiveLink);
+// setActiveLink()

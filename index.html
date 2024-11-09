@@ -209,7 +209,21 @@
         </section>
         <section class="about-section" id="message">
             <h2>Message</h2>
-        
+            <div class="message-box">
+                <form action="https://formspree.io/f/mvgpglda" method="post">
+                    <fieldset>
+                        <label for="name">Full Name:</label>
+                        <input class="css-format-local" type="text" id="name" name="name" required>
+
+                        <label for="email">Email:</label>
+                        <input class="css-format-local" type="email" id="email" name="email" required>
+
+                        <label for="message">Message:</label>
+                        <textarea id="message2" name="message" required placeholder="Your message"></textarea>
+                    </fieldset>
+                    <button class="css-button-local" id="submit">Send <i class="ph ph-paper-plane-tilt" name="send"></i></button>
+                </form>
+            </div>
         </section>
     </div>
     <footer>
