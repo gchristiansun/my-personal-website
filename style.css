@@ -1105,13 +1105,13 @@ textarea {
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
 
-*,
+/* *,
 *::before,
 *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+} */
 
 /* body {
   --color: rgba(30, 30, 30);
@@ -1130,7 +1130,7 @@ h1 {
   text-align: center;
 }
 
-ul {
+section ul {
   --col-gap: 2rem;
   --row-gap: 2rem;
   --line-w: 0.25rem;
