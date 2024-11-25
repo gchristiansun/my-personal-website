@@ -1,3 +1,7 @@
+AOS.init({
+  duration: 800, // Durasi animasi
+  once: true, // Animasi hanya terjadi sekali
+});
 
 const container = document.querySelector('main');
 const section = document.querySelector('.container-particle-section')
@@ -94,3 +98,8 @@ buttonSwitch.addEventListener('click', () => {
 
 // window.addEventListener('hashchange', setActiveLink);
 // setActiveLink()
+
+document.querySelectorAll('.container-particle-section *').forEach((element, index) => {
+  element.setAttribute('data-aos', 'fade-up'); // Tambahkan animasi fade-up
+  element.setAttribute('data-aos-delay', index * 5); // Tambahkan delay berdasarkan urutan
+});

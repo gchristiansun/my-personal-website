@@ -1,4 +1,3 @@
-
 nav {
     width: 100%;
     height: 80px;
@@ -943,12 +942,6 @@ nav li a:is(:link, :active, :visited).active {
     border-bottom: 3px solid #131349ff
 }
 
-@media (min-width: 1000px) {
-    section {
-        scroll-margin-top: 100px
-    }
-}
-
 /* Message */
 
 .message-section {
@@ -1103,3 +1096,16 @@ textarea {
     }
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+@media (min-width: 1000px) {
+    section {
+        scroll-margin-top: 100px !important
+    }
+}
+
+[data-aos="fade-out"] {
+    padding-top: 100px; /* Atur sesuai kebutuhan */
+  }
