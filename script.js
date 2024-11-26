@@ -103,3 +103,16 @@ buttonSwitch.addEventListener('click', () => {
 //   element.setAttribute('data-aos', 'fade-up'); // Tambahkan animasi fade-up
 //   element.setAttribute('data-aos-delay', index * 5); // Tambahkan delay berdasarkan urutan
 // });
+
+window.addEventListener('scroll', function() {
+  var cardJurnal = document.querySelector('.card-jurnal');
+  if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 400) {
+    cardJurnal.style.transform = 'translateX(-100%)'
+  }
+  else if (window.scrollY > 800) {
+    cardJurnal.style.transform = 'translateX(0)'
+  } 
+  else {
+      cardJurnal.style.transform = 'translateX(-100%)'
+  }
+  });

@@ -1,3 +1,8 @@
+a[target="_blank"] {
+    color: blue;
+    text-decoration: underline;
+}
+
 nav {
     width: 100%;
     height: 80px;
@@ -1108,4 +1113,47 @@ html {
 
 [data-aos="fade-out"] {
     padding-top: 100px; /* Atur sesuai kebutuhan */
-  }
+}
+
+.card-jurnal {
+    height: 100%;
+    width: 13%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* border-right: 0.5px solid #696969; */
+    padding: 100px 20px 20px 20px;
+    /* background-color: white; */
+    transform: translateX(-100%);
+    transition: transform 1s ease;
+    z-index: 1;
+}
+
+.card-jurnal h2 {
+    text-align: center;
+    border-top: 0.5px solid #696969;
+    border-bottom: 0.5px solid #696969;
+    margin-bottom: 0px
+}
+
+.jurnal h3 {
+    font-size: 15px;
+    margin-top: 5px;
+    text-overflow: ellipsis;
+}
+
+.jurnal p {
+    border-bottom: 0.5px solid #696969;
+    margin-bottom: 5px
+}
+
+@keyframes in-frame {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+
