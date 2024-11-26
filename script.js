@@ -104,15 +104,16 @@ buttonSwitch.addEventListener('click', () => {
 //   element.setAttribute('data-aos-delay', index * 5); // Tambahkan delay berdasarkan urutan
 // });
 
+var cardJurnal = document.querySelector('.card-jurnal');
 window.addEventListener('scroll', function() {
-  var cardJurnal = document.querySelector('.card-jurnal');
   if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 400) {
     cardJurnal.style.transform = 'translateX(-100%)'
   }
-  else if (window.scrollY > 800) {
+  else if (window.scrollY > 700) {
     cardJurnal.style.transform = 'translateX(0)'
   } 
   else {
       cardJurnal.style.transform = 'translateX(-100%)'
   }
   });
+

@@ -1156,4 +1156,10 @@ html {
     }
 }
 
+@media (max-width: 1500px) {
+    .card-jurnal {
+        display: none;
+    }
+}
+
 
