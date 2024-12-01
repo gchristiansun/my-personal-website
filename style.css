@@ -243,7 +243,7 @@ ul li a {
 }
 
 .box-icon-custom {
-    background-color: #696969;
+    background-color: #333;
     width: 50px;
     height: 50px;
     display: flex;
@@ -1197,8 +1197,8 @@ html {
 .button-sidebar {
     background-color: #333;
     color: white;
-    font-size: 26px;
-    padding: 8px 15px;
+    font-size: 25px;
+    padding: 10px 20px;
     position: fixed;
     top: 120px;
     left: 20px;
