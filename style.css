@@ -1213,7 +1213,8 @@ html {
     transform: translateX(0%);
     transition: transform 0.5s ease !important;
     z-index: 2;
-    border: none
+    border: none;
+    box-shadow: 2px 3px 5px #333;
 }
 
 @media (max-width: 600px) {
@@ -1245,7 +1246,7 @@ html {
     /* display: none; */
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
     .button-sidebar p {
         font-size: 18px;
         margin: 0px 0px 0px 5px;
