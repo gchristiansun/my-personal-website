@@ -1,38 +1,53 @@
-/* styles.css */
-body {
-  font-family: Arial, sans-serif;
+/* Reset CSS */
+body, html {
   margin: 0;
   padding: 0;
-  height: 200vh; /* Buat halaman lebih panjang */
-  background-color: #f0f0f0;
-}
-
-.content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 100px;
-}
-
-.box {
-  width: 200px;
-  height: 200px;
-  background-color: #3498db;
-  color: #fff;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 8px;
-  opacity: 0; /* Mulai tersembunyi */
-  transform: translateY(50px); /* Posisi awal */
-  transition: opacity 0.6s ease, transform 0.6s ease; /* Smooth animasi */
+  min-height: 100vh;
 }
 
-.box.show {
-  opacity: 1; /* Muncul */
-  transform: translateY(0); /* Posisi akhir */
+/* Card Container */
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
-.spacer {
-  height: 100vh; /* Spasi besar untuk scrolling */
+/* Card Style */
+.card {
+  background: linear-gradient(135deg, #4e54c8, #8f94fb);
+  color: white;
+  max-width: 600px;
+  padding: 20px 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Card Hover Effect */
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Card Title */
+.card h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Card Text */
+.card p {
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 15px;
+  text-align: justify;
 }
