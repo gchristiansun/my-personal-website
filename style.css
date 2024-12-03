@@ -1119,7 +1119,7 @@ html {
 
 .card-jurnal {
     height: 100%;
-    width: 350px;
+    width: 340px;
     position: fixed;
     top: 0;
     left: 0;
@@ -1202,11 +1202,11 @@ html {
     background-color: #333;
     color: white;
     font-size: 25px;
-    padding: 10px 20px;
+    padding: 10px 15px;
     position: fixed;
     top: 120px;
     left: 20px;
-    border-radius: 10px;
+    border-radius: 30px;
     display: flex;
     align-items: center;
     gap: 5px;
@@ -1229,5 +1229,27 @@ html {
     .card-jurnal {
         background-color: white;
         border-right: 0.5px solid #333;
+    }
+}
+
+@media (max-width: 380px) {
+    .card-jurnal {
+        width: 310px
+    }
+}
+
+.button-sidebar p {
+    font-size: 18px;
+    margin: 0px 0px 0px 5px;
+    /* opacity: 0; */
+    /* display: none; */
+}
+
+@media (max-width: 400px) {
+    .button-sidebar p {
+        font-size: 18px;
+        margin: 0px 0px 0px 5px;
+        /* opacity: 0; */
+        display: none;
     }
 }

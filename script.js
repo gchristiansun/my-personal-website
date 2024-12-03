@@ -96,16 +96,7 @@ leftArrow.addEventListener('click', () => {
   jurnalButton.style.transform = 'translateX(0%)'
 })
 
-let isScrolling;
 
-window.addEventListener('scroll', () => {
-  jurnalButton.style.transform = 'translateX(-200%)';
-
-  window.clearTimeout(isScrolling);
-  isScrolling = setTimeout(function() {
-    jurnalButton.style.transform = 'translateX(0%)';
-  },100)
-})
 
 // const navLinks = document.querySelectorAll('nav ul li a')
 // function setActiveLink() {
