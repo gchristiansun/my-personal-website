@@ -89,11 +89,11 @@ const sideBar = document.querySelector('.card-jurnal');
 const jurnalButton = document.querySelector('.button-sidebar');
 jurnalButton.addEventListener('click', () => {
   sideBar.style.transform = 'translateX(0%)';
-  jurnalButton.style.transform = 'translateX(-200%)'
+  jurnalButton.style.opacity = '0'
 })
 leftArrow.addEventListener('click', () => {
   sideBar.style.transform = 'translateX(-100%)';
-  jurnalButton.style.transform = 'translateX(0%)'
+  jurnalButton.style.opacity = '1'
 })
 
 

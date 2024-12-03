@@ -1132,7 +1132,7 @@ html {
     z-index: 1;
     overflow-y: scroll;
     overflow-x: hidden;
-
+    transform-origin: top;
     scrollbar-color: transparent transparent;
     justify-content: center;
     transform: translateX(-100%);
@@ -1215,8 +1215,8 @@ html {
     display: flex;
     align-items: center;
     gap: 5px;
-    transform: translateX(0%);
-    transition: transform 0.5s ease !important;
+    opacity: 1;
+    transition: opacity 0.5s ease !important;
     z-index: 2;
     border: none;
     box-shadow: 1px 2px 4px #333;
