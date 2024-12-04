@@ -88,13 +88,18 @@ const leftArrow = document.getElementById('left-arrow');
 const sideBar = document.querySelector('.card-jurnal');
 const jurnalButton = document.querySelector('.button-sidebar');
 jurnalButton.addEventListener('click', () => {
-  sideBar.style.transform = 'translateX(0%)';
-  jurnalButton.style.opacity = '0'
+  if (sideBar.style.transform === 'translateX(-100%)') {
+    sideBar.style.transform = 'translateX(0%)';
+    // jurnalButton.style.opacity = '0'
+  }
+  else {
+    sideBar.style.transform = 'translateX(-100%)';
+  }
 })
-leftArrow.addEventListener('click', () => {
-  sideBar.style.transform = 'translateX(-100%)';
-  jurnalButton.style.opacity = '1'
-})
+// jurnalButton.addEventListener('click', () => {
+//   sideBar.style.transform = 'translateX(-100%)';
+
+// })
 
 
 
