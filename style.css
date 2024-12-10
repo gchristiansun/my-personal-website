@@ -1308,7 +1308,7 @@ html {
     .text-contact {
         align-content: left;
         width: 100%;
-        margin-top: 12%;
+        margin-top: 11%;
         margin-bottom: 12%;
         margin-right: 20%;
 
@@ -1316,7 +1316,7 @@ html {
 
     .image-profile img{
         position: absolute !important;
-        margin-top: 6%;
+        margin-top: 5%;
         margin-left: 30%
 
     }
